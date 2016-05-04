@@ -6,7 +6,7 @@ MAINTAINER Angel Rodriguez  "angelrr7702@gmail.com"
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN echo "deb http://archive.ubuntu.com/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME`-backports main restricted " >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y -q openjdk-8-jre unzip \
+RUN apt-get update && apt-get install -y -q openjdk-8-jre unzip bzip2 p7zip-full \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
