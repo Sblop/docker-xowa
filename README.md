@@ -7,7 +7,7 @@ docker container for xowa (offline wikipedia)
 
   - [Docker][2]
 
-To install docker in Ubuntu 15.04 use the commands:
+To install docker in Ubuntu 16.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
@@ -18,7 +18,7 @@ To install docker in Ubuntu 15.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d -v yours/storage:/opt/xowa/wiki -p 80 quantumobject/docker-xowa
+    $ docker run -d -v yours/storage:/opt/xowa/wiki -p 8080 quantumobject/docker-xowa
   
 note: -v yours/storage:/opt/xowa/wiki   ==> to add,and/or to keep the differents wikipedia after upgrading , replacing your container.  
 ## Accessing the Xowa applications:
