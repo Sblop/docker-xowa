@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Input latest xowa version!
 xowa_version=v4.6.1.1903
 mkdir -p /opt/xowa
 cd /opt/xowa
